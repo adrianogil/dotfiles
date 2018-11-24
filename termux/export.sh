@@ -1,0 +1,1 @@
+export TMP_DIR="$SDCARD/tmp/"
