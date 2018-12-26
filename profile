@@ -12,3 +12,4 @@ trysource $HOME/.bash_aliases
 
 # Another configs
 trysource $HOME/.profile_config
+trysource $HOME/.bashrc_config
