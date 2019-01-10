@@ -6,3 +6,4 @@ elif [[ $0 == *termux* ]]; then
 fi
 
 source $DOTFILES_DIR/machine/bashrc_machines.sh
+source $DOTFILES_DIR/backup/bashrc_bkp.sh
