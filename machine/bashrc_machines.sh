@@ -10,3 +10,4 @@ function dot-machine-name()
 {
     echo $CURRENT_MACHINE
 }
+alias dmn="dot-machine-name"

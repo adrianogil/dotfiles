@@ -28,6 +28,9 @@ function dots-bkp()
     trybackup $HOME/.bashrc_config $bkp_folder
     trybackup $HOME/.gitconfig $bkp_folder
 
+    # Backup SSH keys?
+    # cp -r $HOME/.ssh $bkp_folder
+
     current_dir=$PWD
     cd $PFILES_DIR
     git add $bkp_folder
