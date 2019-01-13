@@ -41,6 +41,14 @@ function dots-bkp()
     cd $current_dir
 }
 
+function dots-bkp-droid-chrome-tabs()
+{
+    # Call function from AndroidDevScripts
+    droid_machine_name=$(adb shell cat /sdcard/.machine)
+    echo "Backup tabs from device: "$droid_machine_name
+    droid-get-open-chrome-tabs $DROID_CHROME_TABS_BKP_FOLDER/${droid_machine_name}_tabs_bkp_$(date +%F_%H_%M).chrome_session
+}
+
 function dots-update-from-bkp()
 {
     bkp_folder=$PFILES_DIR/${CURRENT_MACHINE}_machine/bkp/
