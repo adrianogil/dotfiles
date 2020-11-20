@@ -47,9 +47,14 @@ function dots-bkp-droid-chrome-tabs()
     droid_machine_name=$(adb shell cat /sdcard/.machine)
     echo "Backup tabs from device: "$droid_machine_name
 
-    target_chrome_session=$DROID_CHROME_TABS_BKP_FOLDER/${droid_machine_name}_tabs_bkp_$(date +%F_%H_%M)
+    target_bkp_directory=$DROID_CHROME_TABS_BKP_FOLDER/$(date +%Y%m%d%H%M)
+    mkdir -p ${target_bkp_directory}
+
+    target_chrome_session=${target_bkp_directory}/${droid_machine_name}_tabs_bkp_$(date +%F_%H_%M)
     droid-get-open-chrome-tabs $target_chrome_session
     sed -i -e 's/"//g' $target_chrome_session.chrome-session
+    # Remove undesired file
+    rm ${target_bkp_directory}/*.chrome-session-e
 }
 
 function dots-update-from-bkp()
