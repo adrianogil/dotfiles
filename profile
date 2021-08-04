@@ -15,6 +15,6 @@ trysource $HOME/.profile_config
 trysource $HOME/.bashrc_config
 
 
-. /Users/adriano.gil/Softwares/ai/torch/install/bin/torch-activate
+# . /Users/adriano.gil/Softwares/ai/torch/install/bin/torch-activate
 
-export PATH="$HOME/.cargo/bin:$PATH"
+# export PATH="$HOME/.cargo/bin:$PATH"

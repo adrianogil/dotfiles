@@ -1,7 +1,7 @@
 #!/bin/bash
 
-if [ "$(uname)" == "Darwin" ]; then
-    source $DOTFILES_DIR/osx/export.sh
+if [[ "$(uname)" == "Darwin" ]]; then
+    source $DOTFILES_DIR/osx/osx_bashrc.sh
 elif [[ $0 == *termux* ]]; then
     source $DOTFILES_DIR/termux/export.sh
 fi
