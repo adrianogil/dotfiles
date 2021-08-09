@@ -37,3 +37,7 @@ then
 
 	eval "$(pyenv virtualenv-init -)"
 fi
+
+
+export WORKON_HOME=/Users/adrianogil/.pyenv/virtualenvs/
+source /Users/adrianogil/.pyenv/versions/3.9.6/bin/virtualenvwrapper.sh
