@@ -36,8 +36,9 @@ then
 	# the following to ~/.bashrc:
 
 	eval "$(pyenv virtualenv-init -)"
+
+	export WORKON_HOME=$PYENV_ROOT/virtualenvs/
+	source $PYENV_ROOT/versions/3.9.6/bin/virtualenvwrapper.sh
 fi
 
 
-export WORKON_HOME=/Users/adrianogil/.pyenv/virtualenvs/
-source /Users/adrianogil/.pyenv/versions/3.9.6/bin/virtualenvwrapper.sh
