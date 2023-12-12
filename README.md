@@ -1,12 +1,12 @@
 # dotfiles
-My dotfiles for MacOS and Termux
+My dotfiles for macOS and Termux
 
 ## Folder structure:
 
-- OSX: specific dotfiles for OSX (themes, ...)
+- osx: specific dotfiles for macOS (themes, ...)
+- termux: specific dotfiles for Termux
 
-
-## Dependencies / Related projects
+## Related projects
 
 - [Gil-tools](https://github.com/adrianogil/gil-tools): scripts to integrate my tools
 - [Git-tools](https://github.com/adrianogil/git-tools): scripts with small functions and aliases to ease tasks using git
