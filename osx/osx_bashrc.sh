@@ -41,4 +41,10 @@ then
 	source $PYENV_ROOT/versions/3.9.6/bin/virtualenvwrapper.sh
 fi
 
-
+# SETUP Android path
+if [ -d "$HOME/Library/Android" ] 
+then
+	export ANDROID_HOME=${HOME}/Library/Android
+	export ANDROID_SDK=${ANDROID_HOME}/sdk
+	export PATH=${ANDROID_SDK}/platform-tools:$PATH
+fi
