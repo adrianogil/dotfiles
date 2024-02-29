@@ -2,7 +2,7 @@ source $DOTFILES_DIR/osx/export.sh
 source $DOTFILES_DIR/osx/sublime.sh
 
 # PYENV SETUP
-if [ -d "$HOME/.pyenv" ] 
+if [ -d "$HOME/.pyenv" ]
 then
     # (The below instructions are intended for common
 	# shell setups. See the README for more guidance
@@ -42,9 +42,19 @@ then
 fi
 
 # SETUP Android path
-if [ -d "$HOME/Library/Android" ] 
+if [ -d "$HOME/Library/Android" ]
 then
 	export ANDROID_HOME=${HOME}/Library/Android
 	export ANDROID_SDK=${ANDROID_HOME}/sdk
 	export PATH=${ANDROID_SDK}/platform-tools:$PATH
 fi
+
+function check-android-install()
+{
+	if [ -d "$HOME/Library/Android" ]
+	then
+		echo "Android SDK is installed"
+	else
+		echo "Android SDK is not installed"
+	fi
+}
