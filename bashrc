@@ -1,2 +1,7 @@
 source $HOME/.profile
-export PATH=/usr/local/p/versions/python:$PATH
+
+ # user-defined bin path to drop custom executables
+export PATH=${HOME}/.local/bin:$PATH
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
